@@ -1,0 +1,44 @@
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.bg-nav {
+    background: white;
+}
+
+.header__nav {
+    padding-left: 3.5rem;
+    padding-right: .5rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 40px;
+}
+
+.header__nav:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    border-bottom: 1px solid #d6d6d6;
+    -webkit-box-shadow: 0px 2px 43px 10px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 2px 43px 10px rgba(0,0,0,0.17);
+    box-shadow: 0px 2px 43px 10px rgba(0,0,0,0.17);
+}
+
+.main {
+    background: url(../images/bg-main9.jpg) no-repeat center #fff;
+    background-position: center center;
+    min-height: 100%;
+    background-size: cover;
+}
+
+.main__carousel {
+    margin: 100px auto 0 auto;
+}
