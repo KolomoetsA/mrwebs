@@ -4,6 +4,48 @@ body, html {
     height: 100%;
 }
 
+.logo__text {
+    font-weight: 600;
+}
+
+.title__text {
+    margin-top: 150px;
+    color: #fff;
+    text-align: right;
+    line-height: 50px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px black;
+}
+
+.title__text__undertext {
+    font-weight: 300;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.header__link {
+    display: inline-block;
+    color: #022a4d;
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.header__link:after {
+    background-color: #022a4d;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.header__link:hover:after,
+.header__link:focus:after {
+    width: 100%;
+}
+
 .logo {
     margin: 0 auto;
     max-width: 40px;
@@ -15,8 +57,8 @@ body, html {
 }
 
 .header__nav {
-    padding-left: 3.5rem;
-    padding-right: .5rem;
+    margin-left: 3.5rem;
+    margin-right: .5rem;
     font-family: 'Open Sans', sans-serif;
     line-height: 40px;
 }
@@ -35,10 +77,7 @@ body, html {
 .main {
     background: url(../images/bg-main9.jpg) no-repeat center #fff;
     background-position: center center;
-    min-height: 100%;
+    min-height: 400px;
     background-size: cover;
 }
 
-.main__carousel {
-    margin: 100px auto 0 auto;
-}
