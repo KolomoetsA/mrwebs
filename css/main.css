@@ -21,7 +21,7 @@ body, html {
 
 .title__text__undertext {
     font-weight: 300;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
 }
 
@@ -67,6 +67,8 @@ body, html {
 
 .header__nav:hover {
     text-decoration: none;
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
 }
 
 .navbar {
@@ -113,4 +115,11 @@ body, html {
 
 .socials:hover {
     color: #fff;
+    transform: translateY(-2px);
+    transition: all 0.5s ease;
+}
+
+.copyright {
+    font-size: 15px;
+    text-align: center;
 }
