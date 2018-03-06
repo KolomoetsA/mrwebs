@@ -1,132 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MrWebs - Make your Business GREAT again!</title>
-    <meta name="description" content="Website design, brand strategy and digital marketing. ">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="author" content="John Doe">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/animate.css" type="text/css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script type="text/javascript" src="js/util.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap, JS, CSS, Fonts, Icons -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,800,900&amp;subset=cyrillic" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <title>mrWEBS - Website Development</title>
 </head>
+
 <body>
     <header class="header" id="header">
-        <nav class="navbar navbar-expand-md navbar-light bg-nav fixed-top animated fadeInDown">
-            <a class="navbar-brand logo__text" href="#"><img src="images/logo.png" alt="Logo" class="logo">
-                mr.Webs
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+        <nav class="navbar navbar-expand-md fixed-top navbar-inverse">
+            <a class="navbar-brand logo animated bounceInDown" href="#">mrWEBS</a>
+            <button class="navbar-toggler animated bounceInDown" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
                 aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
-        
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <div class="collapse navbar-collapse animated bounceInDown" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Главная</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="header__nav text-dark header__link" href="#main">Home
-                            <span class="sr-only">(current)</span>
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Портфолио</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сервисы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fas fa-globe"></i>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="header__nav text-dark header__link" href="#information">Information</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="header__nav text-dark header__link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="header__nav text-dark header__link" href="#contact">Contact</a>
+                        <div class="dropdown-menu dropdown-menu-right animated bounceInRight" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Rus</a>
+                            <a class="dropdown-item" href="#">Eng</a>
+                        </div>
                     </li>
                 </ul>
             </div>
         </nav>
-
     </header>
 
-    <section id="main" class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 animated fadeInLeft">
-                    <div class="title">
-                        <h1 class="title__text">
-                             Website Design,<br>Brand Strategy & Digital Marketing<br><span class="title__text__undertext">with Stunning Results</span>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="information" id="information">
-        <div class="container">
-            <div class="row">
-    
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="row">
-    
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-    
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-lg-4 footer__cont__col animated fadeInUp">
-                    <h3 class="footer__cont">Contact:</h3>
-                    <p class="footer__phones"><i class="fas fa-home"></i> Ukraine, Cherkassy</p>
-                    <p class="footer__phones"><i class="fas fa-phone"></i> +38 (063) 298-1288</p>
-                    <p class="footer__phones"><i class="fas fa-at"></i> office@mrwebs.com.ua</p>
-                </div>
-                <div class="col-lg-4 footer__cont__col animated fadeInUp">
-                    <h3 class="footer__cont">Socials:</h3>
-                    <a class="socials" href="#"><i class="fab fa-twitter-square"></i></a>
-                    <a class="socials" href="#"><i class="fab fa-facebook"></i></a>
-                    <a class="socials" href="#"><i class="fab fa-telegram"></i></a>
-                    <a class="socials" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="col-lg-4 footer__cont__col animated fadeInUp">
-                    <h3 class="footer__cont">Map:</h3>
-                    <iframe width="400" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=32.027978897094734%2C49.43143572885558%2C32.075872421264656%2C49.44795585429916&amp;layer=mapnik"
-                        style="border: 1px solid black"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="container">
+    <section class="main" id="main">
+        <div class="container animated bounceInLeft">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="copyright">Copyright © 2018 MrWebs, All rights reserved!</p>
+                    <h1 class="main__slog">
+                        Website Development
+                    </h1>
+                    <h2 class="main__text">
+                        Привет друзья! mrWEBS - комманда профессионалов специализирующаяся на разработке вебсайтов и приложений. Мы используем свой многолетний опыт с максимальной эффективностью и пользой для Вас! При создании проекта используются передовые технологии для лучшего взаимодействия с пользователем.
+                    </h2>
+                </div>
+                <div class="col-lg-2 ml-auto">
+                    <p class="main__go"> <a href="#">Go!</a> </p>
                 </div>
             </div>
         </div>
 
-    </footer>
+    </section>
 
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/util.js"></script>
-
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

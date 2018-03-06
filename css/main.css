@@ -1,125 +1,128 @@
-body, html {
-    font-family: 'Open Sans', sans-serif;
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+a {
+    color: #e0ebc8;
+}
+
+a:hover, a:focus {
+    color: #e0ebc8;
+    text-decoration: underline;
+    outline: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e0ebc8;
+    margin: 1em 0;
     padding: 0;
 }
 
-.logo__text {
-    font-weight: 600;
-}
-
-.title__text {
-    margin-top: 150px;
-    color: #fff;
-    text-align: right;
-    line-height: 50px;
-    font-weight: 800;
-    text-shadow: 2px 2px 4px black;
-}
-
-.title__text__undertext {
-    font-weight: 300;
-    font-size: 30px;
-    font-style: italic;
-}
-
-.header__link {
-    display: inline-block;
-    color: #022a4d;
-    line-height: 1;
-    text-decoration:none;
-    cursor: pointer;
-}
-
-.header__link:after {
-    background-color: #022a4d;
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0%;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
-}
-.header__link:hover:after,
-.header__link:focus:after {
-    width: 100%;
-}
-
 .logo {
-    margin: 0 auto;
-    max-width: 40px;
-    margin-right: 10px;
-}
-
-.bg-nav {
-    background: white;
-}
-
-.header__nav {
-    margin-left: 3.5rem;
-    margin-right: .5rem;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 40px;
-}
-
-.header__nav:hover {
-    text-decoration: none;
-    transform: translateY(-3px);
-    transition: all 0.5s ease;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .navbar {
-    border-bottom: 1px solid #d6d6d6;
-    -webkit-box-shadow: 0px 2px 43px 10px rgba(0,0,0,0.17);
-    -moz-box-shadow: 0px 2px 43px 10px rgba(0,0,0,0.17);
-    box-shadow: 0px 2px 43px 10px rgba(0,0,0,0.17);
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-inverse {
+    background: #1c2528;
+    border-color: #1c2528;
+}
+
+.navbar-inverse .navbar-toggler {
+    border-color: #e0ebc8;
+    color: #e0ebc8;
+}
+
+.nav-link {
+    transition: 0.5s ease;
+    color: #e0ebc8;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+.nav-link:hover {
+    border-bottom: 2px solid #e0ebc8;
+}
+
+.dropdown-menu {
+    font-size: 14px;
+    min-width: 1rem;
+    background: #e0ebc8;
+}
+
+.dropdown-item:hover, .dropdown-item:active {
+    background-color: #1c2528;
+    color: #e0ebc8;
 }
 
 .main {
-    background: url(../images/bg-main9.jpg) no-repeat center #fff;
+    background: url(../img/main-bg.jpg) no-repeat center top #1c2528;
+    background-attachment: relative;
     background-position: center center;
-    min-height: 400px;
+    min-height: 647px;
+    width: 100%;
+    color: #e0ebc8;
+    text-shadow: 5px 5px 25px black;
+
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
-.footer {
-    background: #022a4d;
-    text-align: left;
-    min-width: 200px;
-    color: #fff;
+.main a {
+    text-decoration: none;
 }
 
-.footer__cont {
-    font-size: 16px;
-    text-decoration: underline;
-    line-height: 40px;
+.main__slog {
+    margin-top: 230px;
+    font-size: 70px;
+    font-weight: 800;
+    text-align: right;
 }
 
-.footer__phones {
-    font-size: 13px;
-}
-
-.footer__cont__col {
-    line-height: 10px;
-    margin: 0;
-    padding: 20px;
-}
-
-.socials {
-    margin-right: 10px;
+.main__text {
     font-size: 25px;
+    text-align: right;
 }
 
-.socials:hover {
-    color: #fff;
-    transform: translateY(-2px);
-    transition: all 0.5s ease;
-}
-
-.copyright {
-    font-size: 15px;
+.main__go {
+    font-size: 40px;
+    font-weight: 800;
     text-align: center;
+    border: 2px solid #e0ebc8;
+    border-radius: 0.5rem;
+    line-height: 30px;
+    margin: 15px 15px;
+    padding: 15px 0 15px 0;
+}
+
+
+
+
+/* Mobile CSS */
+
+@media screen and (max-width: 570px) {
+    .main { min-height: 100%; }
+    .main__slog { font-size: 40px; margin-top: 100px; }
+    .main__text { font-size: 20px; }
+    .main__go { max-width: 25%; font-size: 25px; margin-left: 75%; }
 }
