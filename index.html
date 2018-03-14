@@ -14,43 +14,45 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,800,900&amp;subset=cyrillic" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
 
     <title>mrWEBS - Website Development</title>
 </head>
 
 <body>
+
+
     <header class="header" id="header">
-        <nav class="navbar navbar-expand-md fixed-top navbar-inverse">
-            <a class="navbar-brand logo animated bounceInDown" href="#">mrWEBS</a>
-            <button class="navbar-toggler animated bounceInDown" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        <nav class="navbar navbar-expand-md navbar-inverse">
+            <a class="navbar-brand logo wow bounceInDown" href="#">mrWEBS</a>
+            <button class="navbar-toggler wow bounceInDown" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse animated bounceInDown" id="navbarCollapse">
+            <div class="collapse navbar-collapse wow bounceInDown" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Главная</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Как мы работаем</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">О нас</a>
+                        <a class="nav-link" href="#">Технологии</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Портфолио</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Сервисы</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Контакты</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             <i class="fas fa-globe"></i>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right animated bounceInRight" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Rus</a>
-                            <a class="dropdown-item" href="#">Eng</a>
+                        <div class="dropdown-menu dropdown-menu-right wow bounceInRight" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html">Rus</a>
+                            <a class="dropdown-item" href="eng/index.html">Eng</a>
                         </div>
                     </li>
                 </ul>
@@ -59,7 +61,7 @@
     </header>
 
     <section class="main" id="main">
-        <div class="container animated bounceInLeft">
+        <div class="container wow bounceInLeft">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="main__slog">
@@ -70,11 +72,42 @@
                     </h2>
                 </div>
                 <div class="col-lg-2 ml-auto">
-                    <p class="main__go"> <a href="#">Go!</a> </p>
+                    <p class="main__go"> <a href="#about">Go!</a> </p>
                 </div>
             </div>
         </div>
 
+    </section>
+
+    <section class="about light__bg" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="nav__title wow bounceInDown">
+                        Как мы работаем
+                    </h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row d-flex text-center">
+                <div class="col-lg-4 wow bounceInLeft" data-wow-delay="0.5s">
+                    <img class="about__img" src="img/idea.png" alt="Idea">
+                    <h3 class="bold">Идея</h3>
+                    <p>Ваши идеи должны воплощаться в жизнь! Не останавливайтесь на достигнутом. Поставьте нам задачу и мы успешно ее реализуем!</p>
+                </div>
+                <div class="col-lg-4 wow bounceInLeft" data-wow-delay="0.25s">
+                    <img class="about__img" src="img/analytics.png" alt="Analytics">
+                    <h3 class="bold">Аналитика</h3>
+                    <p>Первым делом, мы всегда выполняем полную аналитику Вашей идеи. Успешная аналитика проекта - залог успешной его
+                        реализации!</p>
+                </div>
+                <div class="col-lg-4 wow bounceInLeft">
+                    <img class="about__img" src="img/app.png" alt="Developing">
+                    <h3 class="bold">Разработка</h3>
+                    <p>Многолетный опыт в разработке интернет проектов позволяет нам с легкостью и в кратчайшие сроки выполнить поставленную Вами задачу.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
 

@@ -39,6 +39,12 @@ hr {
     padding-bottom: 15px;
 }
 
+.navbar-brand {
+    border: 1px solid #e0ebc8;
+    /*border-radius: 0.5rem;*/
+    padding: 0 7px 0 7px;
+}
+
 .navbar-inverse {
     background: #1c2528;
     border-color: #1c2528;
@@ -57,7 +63,18 @@ hr {
     border-bottom: 2px solid transparent;
 }
 .nav-link:hover {
-    border-bottom: 2px solid #e0ebc8;
+    border-bottom: 1px solid #e0ebc8;
+}
+
+.dropdown-toggle {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.nav-item a {
+    text-decoration: none;
 }
 
 .dropdown-menu {
@@ -93,7 +110,7 @@ hr {
 }
 
 .main__slog {
-    margin-top: 230px;
+    margin-top: 170px;
     font-size: 70px;
     font-weight: 800;
     text-align: right;
@@ -108,21 +125,72 @@ hr {
     font-size: 40px;
     font-weight: 800;
     text-align: center;
-    border: 2px solid #e0ebc8;
-    border-radius: 0.5rem;
+    border: 1px solid #e0ebc8;
+    /*border-radius: 0.5rem;*/
     line-height: 30px;
     margin: 15px 15px;
     padding: 15px 0 15px 0;
 }
 
+.bold {
+    font-weight: 800;
+}
 
+.light__bg {
+    background: #e0ebc8;
+}
+
+.dark__bg {
+    background: #1c2528;
+}
+
+.light__bg a {
+    color: #1c2528;
+    font-weight: 600;
+}
+
+.dark__bg a {
+    color: #e0ebc8;
+    font-weight: 600;
+}
+
+.dark__bg hr {
+    border-bottom: 1px solid #e0ebc8;
+    margin-bottom: 30px;
+}
+
+.light__bg hr {
+    border-bottom: 1px solid #1c2528;
+    margin-bottom: 30px;
+}
+
+.nav__title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+.about {
+    min-height: 100%;
+    background: #e0ebc8;
+}
+
+.about__img {
+    width: 60%;
+    margin: 20px 0 30px 0;
+}
 
 
 /* Mobile CSS */
 
 @media screen and (max-width: 570px) {
     .main { min-height: 100%; }
+    .about { min-height: 100%; }
     .main__slog { font-size: 40px; margin-top: 100px; }
     .main__text { font-size: 20px; }
     .main__go { max-width: 25%; font-size: 25px; margin-left: 75%; }
+    .navbar-nav .dropdown-toggle { padding-right: 0; padding-left: 0; }
+    .navbar-nav { margin-top: 15px; }
+    .navbar-toggler { border-radius: 0 }
 }
