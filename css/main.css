@@ -246,5 +246,7 @@ hr {
     .main__go { max-width: 25%; font-size: 25px; margin-left: 75%; }
     .navbar-nav .dropdown-toggle { padding-right: 0; padding-left: 0; }
     .navbar-nav { margin-top: 15px; }
-    .navbar-toggler { border-radius: 0 }
+    .navbar-toggler { border-radius: 0; }
+    .portfolio__img-left { border: none; }
+    .portfolio__img-right { border: none; }
 }
