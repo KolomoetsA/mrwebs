@@ -136,6 +136,14 @@ hr {
     font-weight: 800;
 }
 
+.centered {
+    text-align: center;
+}
+
+.text__light {
+    color: #e0ebc8;
+}
+
 .light__bg {
     background: #e0ebc8;
 }
@@ -155,7 +163,6 @@ hr {
 }
 
 .dark__bg hr {
-    border-bottom: 1px solid #e0ebc8;
     margin-bottom: 30px;
 }
 
@@ -171,6 +178,14 @@ hr {
     font-weight: 800;
 }
 
+.nav__title_light {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    color: #e0ebc8;
+}
+
 .about {
     min-height: 100%;
     background: #e0ebc8;
@@ -180,6 +195,45 @@ hr {
     width: 60%;
     margin: 20px 0 30px 0;
 }
+
+.technology {
+    min-height: 100%;
+}
+
+.technology__img {
+    max-width: 60%;
+    margin: 30px 0 30px 0;
+}
+
+.technology p {
+    font-size: 12px;
+}
+
+.portfolio {
+    min-height: 100%;
+}
+
+.portfolio__img-left {
+    max-width: 100%;
+    margin: 20px 0 30px 0;
+    border-left: 1px solid #1c2528;
+    border-bottom: 1px solid #1c2528;
+}
+
+.portfolio__img-right {
+    max-width: 100%;
+    margin: 20px 0 30px 0;
+    border-right: 1px solid #1c2528;
+    border-bottom: 1px solid #1c2528;
+}
+
+.portfolio__img-tech {
+    max-width: 20%;
+    margin: 15px 0 15px 0;
+}
+
+
+
 
 
 /* Mobile CSS */
