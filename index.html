@@ -44,10 +44,10 @@
                         <a class="nav-link" href="#portfolio">Портфолио</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Статьи</a>
+                        <a class="nav-link" href="#articles">Статьи</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
+                        <a class="nav-link" href="#footer">Контакты</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -86,13 +86,23 @@
     <section class="about light__bg" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-1 angle wow bounceInDown">
+                    <a href="#header">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
+                </div>
+                <div class="col-lg-10">
                     <h1 class="nav__title wow bounceInDown">
                         Как мы работаем
                     </h1>
-                    <hr>
+                </div>
+                <div class="col-lg-1 angle wow bounceInDown">
+                    <a href="#technology">
+                        <i class="fas fa-angle-down"></i>
+                    </a>
                 </div>
             </div>
+            <hr>
             <div class="row d-flex text-center">
                 <div class="col-lg-4 wow bounceInLeft" data-wow-delay="0.5s">
                     <img class="about__img hvr-shadow" src="img/idea.png" alt="Idea">
@@ -117,12 +127,24 @@
     <section class="technology light__bg" id="technology">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-1 angle wow bounceInDown">
+                    <a href="#about">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
+                </div>
+                <div class="col-lg-10">
                     <h1 class="nav__title wow bounceInDown">
                         Какие технологии используем
                     </h1>
-                    <hr>
                 </div>
+                <div class="col-lg-1 angle wow bounceInDown">
+                    <a href="#portfolio">
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
                 <div class="col-lg-12">
                     <h2 class="bold wow bounceInLeft">
                         При разработке корпоративных вебсайтов:
@@ -176,14 +198,24 @@
     <section class="portfolio light__bg" id="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-1 angle wow bounceInDown">
+                        <a href="#technology">
+                            <i class="fas fa-angle-up"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-10">
                         <h1 class="nav__title wow bounceInDown">
                             Наше портфолио
                         </h1>
-                        <hr>
+                    </div>
+                    <div class="col-lg-1 angle wow bounceInDown">
+                        <a href="#articles">
+                            <i class="fas fa-angle-down"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="row d-flex">
+                <hr>
+                <div class="row">
                     <div class="col-lg-8 wow bounceInLeft" data-wow-delay="0.25s">
                         <img class="portfolio__img-left" src="img/agsd.png" alt="agsd.ru">
                     </div>
@@ -200,7 +232,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row d-flex">
+                <div class="row">
                     <div class="col-lg-4 wow bounceInLeft" data-wow-delay="0.25s">
                         <h3 class="bold">addinol.kiev.ua</h3>
                         <p>Интернет-магазин по продаже автомобильных и промышленных масел. Разработан на платформе SimplaCMS. Индивидуальный дизайн заказчика.</p>
@@ -216,7 +248,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row d-flex">
+                <div class="row">
                     <div class="col-lg-8 wow bounceInLeft" data-wow-delay="0.25s">
                         <img class="portfolio__img-left" src="img/wmg.png" alt="wmgroup.us">
                     </div>
@@ -232,7 +264,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row d-flex">
+                <div class="row">
                     <div class="col-lg-4 wow bounceInLeft" data-wow-delay="0.25s">
                         <h3 class="bold">hepatit.kiev.ua</h3>
                         <p>Информационный портал интернет-аптеки специализирующейся на консультации и продаже препаратов по борьбе с гепатитом. Создан с использованием фреймворка Bootstrap 4. Индивидуальный дизайн заказчика.</p>
@@ -248,7 +280,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row d-flex">
+                <div class="row">
                     <div class="col-lg-8 wow bounceInLeft" data-wow-delay="0.25s">
                         <img class="portfolio__img-left" src="img/umotor.png" alt="umotor.ck.ua">
                     </div>
@@ -264,7 +296,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row d-flex">
+                <div class="row">
                     <div class="col-lg-4 wow bounceInLeft" data-wow-delay="0.25s">
                         <h3 class="bold">tovarov.com.ua</h3>
                         <p>Интернет-магазин по продаже климатического и отопительного оборудования. Разработан на платформе OpenCart с использованием технологии Bootstrap 4. Индивидуальный дизайн заказчика.</p>
@@ -283,12 +315,109 @@
             </div>
         </section>
 
+        <section class="articles light__bg" id="articles">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1 angle wow bounceInDown">
+                        <a href="#portfolio">
+                            <i class="fas fa-angle-up"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-10">
+                        <h1 class="nav__title wow bounceInDown">
+                            Статьи
+                        </h1>
+                    </div>
+                    <div class="col-lg-1 angle wow bounceInDown">
+                        <a href="#footer">
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer dark__bg text__light" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5">
+                        <h1 class="nav__title wow bounceInDown">
+                            Контакты
+                        </h1>
+                        <hr>
+                    </div>
+                    <div class="col-lg-3 wow bounceInLeft" data-wow-delay="0.5s">
+                        <h5 class="bold">Связаться с нами:</h5>
+                        <p><i class="fas fa-phone-volume"></i> +38 063 298-12-88</p>
+                        <p><i class="fas fa-at"></i> office@mrwebs.com.ua</p>
+                        <p><i class="fab fa-skype"></i> mrwebs.lab</p>
+                        <a class="navbar-brand logo" href="#">mrWEBS</a>
+                    </div>
+                    <div class="col-lg-3 wow bounceInLeft" data-wow-delay="0.25s">
+                        <h5 class="bold">Меню:</h5>
+                        <p><a href="#about"> - Как мы работаем</a></p>
+                        <p><a href="#technology"> - Технологии</a></p>
+                        <p><a href="#portfolio"> - Портфолио</a></p>
+                        <p><a href="#articles"> - Статьи</a></p>
+                    </div>
+                    <div class="col-lg-6 wow bounceInLeft">
+                        <div class="well">
+                            <h5 class="bold">Напишите нам:</h5>
+                            <form role="form" id="contactForm" data-toggle="validator" class="shake">
+                                <div class="row">
+                                    <div class="form-group col-lg-6">
+                                        <label for="name" class="h6">Ваше имя</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Введите пожалуйста имя" required data-error="Введите пожалуйста имя">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label for="email" class="h6">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Введите пожалуйста email" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="h6">Сообщение</label>
+                                    <textarea id="message" class="form-control" rows="5" placeholder="Напишите нам" required></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <button type="submit" id="form-submit" class="btn btn-main pull-right">Отправить</button>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 centered copyright wow bounceIn">
+                        <p>mrWEBS © Авторское право (Copyright) | Все права защищены (All rights reserved) | 2010 - 2018</p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
 
 
     <!-- Optional JavaScript -->
+    <script src="js/form-scripts.js"></script>
+    <script src="js/validator.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a[href*=#]").on("click", function (e) {
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top
+                }, 777);
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
