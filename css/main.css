@@ -288,6 +288,10 @@ hr {
     padding-top: 40px;
 }
 
+.article__form {
+    background-color: #e0ebc8;
+    border: none;
+}
 /* Mobile CSS */
 
 @media screen and (max-width: 570px) {
