@@ -278,6 +278,16 @@ hr {
     font-size: 12px;
 }
 
+
+.article__main {
+    min-height: 647px;
+    background: #e0ebc8;        
+}
+
+.article__start {
+    padding-top: 40px;
+}
+
 /* Mobile CSS */
 
 @media screen and (max-width: 570px) {
