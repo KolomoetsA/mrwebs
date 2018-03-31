@@ -278,7 +278,6 @@ hr {
     font-size: 12px;
 }
 
-
 .article__main {
     min-height: 647px;
     background: #e0ebc8;        
@@ -292,6 +291,20 @@ hr {
     background-color: #e0ebc8;
     border: none;
 }
+
+.wacs {
+    padding-top: 250px;
+}
+
+.wacs__link a {
+    color: #1c2528;
+    text-decoration: none;
+}
+
+.text__shadow {
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.1), 10px 10px 5px rgba(0,0,0,0.05), -10px 10px 5px rgba(0,0,0,0.05);
+}
+
 /* Mobile CSS */
 
 @media screen and (max-width: 570px) {
